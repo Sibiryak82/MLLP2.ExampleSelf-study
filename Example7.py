@@ -31,9 +31,19 @@ L = Label(win, text='Spam',
           font=('arial', fontsize, 'italic'), fg='yellow', bg='navy',
           relief=RAISED)
 
+#L.pack(side=TOP, expand=YES, fill=BOTH)
+#Button(win, text='press', command=(lambda: reply('red')))
+#pack(side=BOTTOM, fill=X)
+#Button(win, text='timer', command=timer).pack(side=BOTTOM, fill=X)
+#Button(win, text='grow', command=grow).pack(side=BOTTOM, fill=X)
+#win.mainloop()
+
+# код не рабочий проблема в версиях Python
+
 L.pack(side=TOP, expand=YES, fill=BOTH)
-Button(win, text='press', command=(lambda: reply('red')))
-pack(side=BOTTOM, fill=X)
+Button(win, text='press', command=(lambda: reply('red'))).pack(side=BOTTOM, fill=X)
 Button(win, text='timer', command=timer).pack(side=BOTTOM, fill=X)
 Button(win, text='grow', command=grow).pack(side=BOTTOM, fill=X)
 win.mainloop()
+
+# этот код работает
